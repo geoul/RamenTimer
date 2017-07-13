@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ktds.ramentimer.MainActivity">
+
+        <LinearLayout
+            android:id="@+id/ll_neoguri"
+            android:layout_width="368dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/neoguri"/>
+
+            <TextView
+                android:id="@+id/tv_neoguri"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:text="너구리 라면"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#747474"/>
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_anseongtangmean"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/ll_neoguri"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/anseongtangmean"/>
+
+        <TextView
+            android:id="@+id/tv_anseongtangmean"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:text="안성탕면"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#747474"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_jin_ramen"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/ll_anseongtangmean"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/jin"/>
+
+        <TextView
+            android:id="@+id/tv_jin_ramen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:text="진라면"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#747474"/>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
